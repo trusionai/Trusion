@@ -1,0 +1,17 @@
+{
+  "name": "trusion-frontend",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "TRUSION web client (React + TypeScript). Built with esbuild; talks only to the TRUSION backend API.",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "typecheck:offline": "tsc -p tsconfig.offline.json",
+    "test": "node --import tsx --disable-warning=ExperimentalWarning --test --test-reporter=spec \"tests/*.test.ts\" \"tests/*.test.tsx\"",
+    "test:e2e": "node --import tsx --disable-warning=ExperimentalWarning --test --test-reporter=spec --test-concurrency=1 \"e2e/*.e2e.ts\""
+  },
+  "dependencies": { "react": "19.2.5", "react-dom": "19.2.5" },
+  "devDependencies": { "esbuild": "0.27.7", "typescript": "6.0.3", "tsx": "4.21.0", "playwright": "1.56.0", "@types/react": "^19", "@types/react-dom": "^19" }
+}
