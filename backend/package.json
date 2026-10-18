@@ -1,0 +1,13 @@
+{
+  "name": "trusion-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TRUSION backend core (slice 1). Zero third-party runtime dependencies; requires Node >= 22.18 (native TypeScript type-stripping, node:sqlite, node:test).",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-reporter=spec \"tests/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}

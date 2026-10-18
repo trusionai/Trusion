@@ -1,0 +1,16 @@
+[
+  {
+    "id": "REPLACE_WITH_VERIFIED_MODEL_ID",
+    "provider": "example",
+    "tier": "free",
+    "capabilities": ["text", "json"],
+    "maxContextTokens": 8000,
+    "maxOutputTokens": 1000,
+    "priceInPerM": 0,
+    "priceOutPerM": 0,
+    "priceVerifiedAt": null,
+    "dataPolicy": "external_logged",
+    "qualityRank": 1,
+    "enabled": false
+  }
+]
