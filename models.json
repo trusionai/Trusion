@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": "openrouter/free",
+    "provider": "openrouter",
+    "tier": "free",
+    "capabilities": ["text", "json"],
+    "maxContextTokens": 8192,
+    "maxOutputTokens": 2048,
+    "priceInPerM": 0,
+    "priceOutPerM": 0,
+    "priceVerifiedAt": "2026-10-20T00:00:00.000Z",
+    "dataPolicy": "external_logged",
+    "qualityRank": 1,
+    "enabled": true
+  }
+]
